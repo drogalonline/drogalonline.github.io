@@ -30,7 +30,11 @@
     
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <!-- SCHEMA.ORG COMPLETO COM PREÇOS REAIS -->
+    <!-- 
+      DADOS ESTRUTURADOS CORRIGIDOS (JSON-LD) 
+      Usando hasMenu + hasMenuItem + offers conforme orientação do Google
+      para evitar erros no Search Console
+    -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -69,72 +73,132 @@
         "https://www.instagram.com/drogal",
         "https://www.facebook.com/drogal"
       ],
-      "makesOffer": [
-        {
-          "@type": "Offer",
-          "name": "Mounjaro (Tirzepatida)",
-          "priceSpecification": {
-            "@type": "PriceSpecification",
-            "priceCurrency": "BRL",
-            "price": "2250"
+      "hasMenu": {
+        "@type": "Menu",
+        "name": "Medicamentos Especiais Controlados",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "Mounjaro (Tirzepatida) - Kit Inicial",
+            "description": "Solução Injetável para tratamento sob orientação médica. Kit com 2,5mg + 5mg. Armazenamento em cadeia de frio.",
+            "offers": {
+              "@type": "Offer",
+              "price": "2250.00",
+              "priceCurrency": "BRL",
+              "availability": "https://schema.org/InStock",
+              "priceValidUntil": "2026-12-31",
+              "url": "https://www.drogal.com.br/medicamentos-controlados"
+            }
           },
-          "availability": "https://schema.org/InStock",
-          "description": "Kit com duas caixas (2,5mg + 5mg) por R$ 2.250"
-        },
-        {
-          "@type": "Offer",
-          "name": "Venvanse 30mg",
-          "priceSpecification": {
-            "@type": "PriceSpecification",
-            "priceCurrency": "BRL",
-            "price": "381.08"
+          {
+            "@type": "MenuItem",
+            "name": "Mounjaro (Tirzepatida) - Kit Ajuste",
+            "description": "Solução Injetável para tratamento sob orientação médica. Kit com 7,5mg + 10mg.",
+            "offers": {
+              "@type": "Offer",
+              "price": "3998.00",
+              "priceCurrency": "BRL",
+              "availability": "https://schema.org/InStock",
+              "priceValidUntil": "2026-12-31",
+              "url": "https://www.drogal.com.br/medicamentos-controlados"
+            }
           },
-          "availability": "https://schema.org/InStock"
-        },
-        {
-          "@type": "Offer",
-          "name": "Venvanse 50mg",
-          "priceSpecification": {
-            "@type": "PriceSpecification",
-            "priceCurrency": "BRL",
-            "price": "468.12"
+          {
+            "@type": "MenuItem",
+            "name": "Mounjaro (Tirzepatida) - Kit Avançado",
+            "description": "Solução Injetável para tratamento sob orientação médica. Kit com 12,5mg ou 15mg.",
+            "offers": {
+              "@type": "Offer",
+              "price": "4598.00",
+              "priceCurrency": "BRL",
+              "availability": "https://schema.org/InStock",
+              "priceValidUntil": "2026-12-31",
+              "url": "https://www.drogal.com.br/medicamentos-controlados"
+            }
           },
-          "availability": "https://schema.org/InStock"
-        },
-        {
-          "@type": "Offer",
-          "name": "Venvanse 70mg",
-          "priceSpecification": {
-            "@type": "PriceSpecification",
-            "priceCurrency": "BRL",
-            "price": "480.13"
+          {
+            "@type": "MenuItem",
+            "name": "Venvanse 30mg (Lisdexanfetamina)",
+            "description": "Tratamento para TDAH sob retenção de receita amarela (A3). 28 cápsulas.",
+            "offers": {
+              "@type": "Offer",
+              "price": "381.08",
+              "priceCurrency": "BRL",
+              "availability": "https://schema.org/InStock",
+              "priceValidUntil": "2026-12-31",
+              "url": "https://www.drogal.com.br/medicamentos-controlados"
+            }
           },
-          "availability": "https://schema.org/InStock"
-        },
-        {
-          "@type": "Offer",
-          "name": "Ritalina 10mg - 60 comprimidos",
-          "priceSpecification": {
-            "@type": "PriceSpecification",
-            "priceCurrency": "BRL",
-            "price": "81.01"
+          {
+            "@type": "MenuItem",
+            "name": "Venvanse 50mg (Lisdexanfetamina)",
+            "description": "Tratamento para TDAH sob retenção de receita amarela (A3). 28 cápsulas.",
+            "offers": {
+              "@type": "Offer",
+              "price": "468.12",
+              "priceCurrency": "BRL",
+              "availability": "https://schema.org/InStock",
+              "priceValidUntil": "2026-12-31",
+              "url": "https://www.drogal.com.br/medicamentos-controlados"
+            }
           },
-          "availability": "https://schema.org/InStock"
-        },
-        {
-          "@type": "Offer",
-          "name": "Ritalina LA 30mg - 30 cápsulas",
-          "priceSpecification": {
-            "@type": "PriceSpecification",
-            "priceCurrency": "BRL",
-            "price": "306.94"
+          {
+            "@type": "MenuItem",
+            "name": "Venvanse 70mg (Lisdexanfetamina)",
+            "description": "Tratamento para TDAH sob retenção de receita amarela (A3). 28 cápsulas.",
+            "offers": {
+              "@type": "Offer",
+              "price": "480.13",
+              "priceCurrency": "BRL",
+              "availability": "https://schema.org/InStock",
+              "priceValidUntil": "2026-12-31",
+              "url": "https://www.drogal.com.br/medicamentos-controlados"
+            }
           },
-          "availability": "https://schema.org/InStock"
-        }
-      ]
+          {
+            "@type": "MenuItem",
+            "name": "Ritalina 10mg (Cloridrato de Metilfenidato)",
+            "description": "Medicamento de controle especial tarja preta. 60 comprimidos.",
+            "offers": {
+              "@type": "Offer",
+              "price": "81.01",
+              "priceCurrency": "BRL",
+              "availability": "https://schema.org/InStock",
+              "priceValidUntil": "2026-12-31",
+              "url": "https://www.drogal.com.br/medicamentos-controlados"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Ritalina LA 30mg (Cloridrato de Metilfenidato)",
+            "description": "Medicamento de controle especial tarja preta - liberação modificada. 30 cápsulas.",
+            "offers": {
+              "@type": "Offer",
+              "price": "306.94",
+              "priceCurrency": "BRL",
+              "availability": "https://schema.org/InStock",
+              "priceValidUntil": "2026-12-31",
+              "url": "https://www.drogal.com.br/medicamentos-controlados"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Ritalina LA 10mg (Cloridrato de Metilfenidato)",
+            "description": "Medicamento de controle especial tarja preta - liberação modificada. 30 cápsulas.",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "BRL",
+              "availability": "https://schema.org/OutOfStock",
+              "url": "https://www.drogal.com.br/medicamentos-controlados"
+            }
+          }
+        ]
+      }
     }
     </script>
 
+    <!-- BREADCRUMB LIST -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -156,18 +220,60 @@
     }
     </script>
 
+    <!-- FAQ SCHEMA -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qual o preço do Mounjaro na Farmácia Drogal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O Mounjaro teve redução de até 35% nos preços. O kit inicial (2,5mg + 5mg) sai por R$ 2.250, o kit de ajuste (7,5mg + 10mg) por R$ 3.998 e o kit avançado (12,5mg ou 15mg) por R$ 4.598."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual o preço da Ritalina na Farmácia Drogal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Ritalina 10mg com 60 comprimidos sai por R$ 81. A Ritalina LA 30mg custa R$ 306. Consulte nosso atendimento para a Ritalina LA 10mg."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como comprar Venvanse online com segurança?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Para comprar Venvanse online, você deve enviar sua receita médica amarela (A3) para nossa equipe. Os preços atuais são: 30mg por R$ 381, 50mg por R$ 468 e 70mg por R$ 480."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Precisa de receita para comprar Ritalina?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. A Ritalina é um medicamento de controle especial (Tarja Preta) que exige Retenção de Receita Especial Amarela (A3) para sua dispensação."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A Farmácia Drogal é autorizada pela ANVISA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. A Farmácia Drogal possui todas as autorizações da ANVISA para dispensação de medicamentos controlados, incluindo Autorização de Funcionamento (AFE) e Autorização Especial (AE)."
+          }
+        }
+      ]
+    }
+    </script>
+
     <style>
       .transition { transition: all 0.3s ease; }
       .focus-ring:focus { outline: 2px solid #059669; outline-offset: 2px; }
       .keyword-highlight { color: #dc2626; font-weight: 600; }
-      .price-tag { 
-        background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-        border: 1px solid #f59e0b;
-        color: #92400e;
-        font-weight: 700;
-      }
-      .price-tag span { color: #dc2626; font-size: 1.1em; }
-      .old-price { text-decoration: line-through; color: #9ca3af; font-size: 0.8em; }
       .modal-overlay {
         position: fixed;
         inset: 0;
@@ -310,18 +416,15 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             
             <!-- MOUNJARO -->
-            <article class="bg-white rounded-xl shadow-md border border-gray-100 p-6 flex flex-col hover:shadow-lg transition" itemscope itemtype="https://schema.org/Product">
+            <article class="bg-white rounded-xl shadow-md border border-gray-100 p-6 flex flex-col hover:shadow-lg transition">
                 <div>
                     <div class="flex justify-between items-start">
                         <span class="bg-red-100 text-red-800 text-xs font-bold px-2.5 py-1 rounded-full uppercase">Tarja Vermelha</span>
                         <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full font-bold">⭐ Mais Vendido</span>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mt-3" itemprop="name">
-                        Mounjaro (Tirzepatida)
-                    </h3>
+                    <h3 class="text-xl font-bold text-gray-900 mt-3">Mounjaro (Tirzepatida)</h3>
                     <p class="text-xs text-gray-500 font-medium italic mb-4">Solução Injetável | Fabricante: Eli Lilly</p>
                     
-                    <!-- PREÇOS MOUNJARO -->
                     <div class="space-y-3 mb-4">
                         <div class="bg-green-50 p-3 rounded-lg border border-green-200">
                             <p class="text-xs text-gray-600">Kit Inicial (2,5mg + 5mg) — 2 caixas</p>
@@ -360,15 +463,12 @@
             </article>
 
             <!-- VENVANSE -->
-            <article class="bg-white rounded-xl shadow-md border border-gray-100 p-6 flex flex-col hover:shadow-lg transition" itemscope itemtype="https://schema.org/Product">
+            <article class="bg-white rounded-xl shadow-md border border-gray-100 p-6 flex flex-col hover:shadow-lg transition">
                 <div>
                     <span class="bg-black text-white text-xs font-bold px-2.5 py-1 rounded-full uppercase">Tarja Preta</span>
-                    <h3 class="text-xl font-bold text-gray-900 mt-3" itemprop="name">
-                        Venvanse (Lisdexanfetamina)
-                    </h3>
+                    <h3 class="text-xl font-bold text-gray-900 mt-3">Venvanse (Lisdexanfetamina)</h3>
                     <p class="text-xs text-gray-500 font-medium italic mb-4">Cápsulas Duras | Fabricante: Takeda</p>
                     
-                    <!-- PREÇOS VENVANSE -->
                     <div class="space-y-3 mb-4">
                         <div class="bg-yellow-50 p-3 rounded-lg border border-yellow-200">
                             <p class="text-xs text-gray-600">Venvanse 30mg — 28 cápsulas</p>
@@ -407,15 +507,12 @@
             </article>
 
             <!-- RITALINA -->
-            <article class="bg-white rounded-xl shadow-md border border-gray-100 p-6 flex flex-col hover:shadow-lg transition" itemscope itemtype="https://schema.org/Product">
+            <article class="bg-white rounded-xl shadow-md border border-gray-100 p-6 flex flex-col hover:shadow-lg transition">
                 <div>
                     <span class="bg-black text-white text-xs font-bold px-2.5 py-1 rounded-full uppercase">Tarja Preta</span>
-                    <h3 class="text-xl font-bold text-gray-900 mt-3" itemprop="name">
-                        Ritalina / Ritalina LA
-                    </h3>
+                    <h3 class="text-xl font-bold text-gray-900 mt-3">Ritalina / Ritalina LA</h3>
                     <p class="text-xs text-gray-500 font-medium italic mb-4">Cloridrato de Metilfenidato | Fabricante: Novartis</p>
                     
-                    <!-- PREÇOS RITALINA -->
                     <div class="space-y-3 mb-4">
                         <div class="bg-green-50 p-3 rounded-lg border border-green-200">
                             <p class="text-xs text-gray-600">Ritalina 10mg — 60 comprimidos</p>
@@ -424,7 +521,6 @@
                                 <span class="text-sm text-gray-400 line-through">R$ 108</span>
                                 <span class="text-xs bg-green-100 text-green-800 px-2 py-0.5 rounded-full">-25%</span>
                             </div>
-                            <p class="text-[10px] text-gray-500">Preço via Pix com desconto [citation:2]</p>
                         </div>
                         <div class="bg-yellow-50 p-3 rounded-lg border border-yellow-200">
                             <p class="text-xs text-gray-600">Ritalina LA 30mg — 30 cápsulas</p>
@@ -433,12 +529,11 @@
                                 <span class="text-sm text-gray-400 line-through">R$ 390</span>
                                 <span class="text-xs bg-green-100 text-green-800 px-2 py-0.5 rounded-full">-21%</span>
                             </div>
-                            <p class="text-[10px] text-gray-500">Liberação modificada [citation:5]</p>
                         </div>
                         <div class="bg-gray-50 p-3 rounded-lg border border-gray-200">
                             <p class="text-xs text-gray-600">Ritalina LA 10mg — 30 cápsulas</p>
                             <p class="text-lg font-bold text-red-600">Consulte Preço</p>
-                            <p class="text-[10px] text-gray-500">Liberação modificada — consulte disponibilidade [citation:3]</p>
+                            <p class="text-[10px] text-gray-500">Liberação modificada — consulte disponibilidade</p>
                         </div>
                     </div>
                     
@@ -531,7 +626,7 @@
                 </table>
             </div>
             <div class="bg-gray-50 px-6 py-3 border-t border-gray-200">
-                <p class="text-xs text-gray-500">* Preços baseados em pesquisas de mercado em farmácias online [citation:2][citation:5]. Os valores podem sofrer alterações. Consulte nosso atendimento para preços atualizados.</p>
+                <p class="text-xs text-gray-500">* Preços baseados em pesquisas de mercado em farmácias online. Os valores podem sofrer alterações. Consulte nosso atendimento para preços atualizados.</p>
             </div>
         </div>
 
@@ -573,7 +668,7 @@
                 </div>
                 <div class="border-b border-gray-200 pb-4">
                     <h3 class="font-bold text-gray-800 text-lg">Qual o preço da Ritalina na Farmácia Drogal?</h3>
-                    <p class="text-gray-600 mt-1 text-sm">A <strong>Ritalina 10mg com 60 comprimidos</strong> sai por <strong>R$ 81</strong> (economia de R$ 27) [citation:2]. A <strong>Ritalina LA 30mg</strong> (liberação modificada) custa <strong>R$ 306</strong> [citation:5]. Consulte nosso atendimento para a Ritalina LA 10mg e outras apresentações [citation:3].</p>
+                    <p class="text-gray-600 mt-1 text-sm">A <strong>Ritalina 10mg com 60 comprimidos</strong> sai por <strong>R$ 81</strong> (economia de R$ 27). A <strong>Ritalina LA 30mg</strong> (liberação modificada) custa <strong>R$ 306</strong>. Consulte nosso atendimento para a Ritalina LA 10mg e outras apresentações.</p>
                 </div>
                 <div class="border-b border-gray-200 pb-4">
                     <h3 class="font-bold text-gray-800 text-lg">Como comprar Venvanse online com segurança?</h3>
