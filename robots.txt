@@ -1,0 +1,10 @@
+# Permitir todos os robôs de busca
+User-agent: *
+Allow: /
+
+# Onde está o sitemap
+Sitemap: https://drogalonline.github.io/sitemap.xml
+
+# Desbloquear arquivos importantes
+Allow: /sitemap.xml
+Allow: /robots.txt
